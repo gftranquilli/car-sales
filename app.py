@@ -70,10 +70,10 @@ if start_button:  # se o botão for pressionado
         if scatter_selectbox == 'Ano x Preço':
             # escrever uma mensagem
             st.write(
-                'Criando um gráfico de dispersão para o ano e o preço dos veículos...')
+                'Criando um gráfico de dispersão para o ano de fabricação e o preço dos veículos...')
             # criar um gráfico de dispersão
             fig2 = px.scatter(car_data, x='model_year', y='price', labels={
-                'year': 'Ano de fabricação', 'price': 'Preço em Dólares'})
+                'model_year': 'Ano de fabricação', 'price': 'Preço em Dólares'})
             fig2.show()
 
         # exibir um gráfico Plotly interativo
